@@ -235,5 +235,5 @@ async function deleteUser(req,res,next) {
     }
 }
 
-module.exports = {allUsers, createUser, oneUser, updateUser, patchUser, deleteUser}
+module.exports = {writeDB, allUsers, createUser, oneUser, updateUser, patchUser, deleteUser}
 
