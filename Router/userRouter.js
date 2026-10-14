@@ -14,6 +14,7 @@ const router = express.Router();
 router.get("/users", logger, authenticate.checkApiKey, controller.allUsers);
 router.post(
   "/user",
+  logger,
   authenticate.checkApiKey,
   validation.validate,
   controller.createUser,
